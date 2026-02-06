@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Wolves</title>
+<title>0802</title>
 <style>
 *{margin:0;padding:0}
 html{min-height:100vh;background:#0a0a0a}
 body{display:flex;align-items:center;justify-content:center}
 pre{
   color:#ffb000;
-  font:4rem/1.15 monospace;
   text-shadow:0 0 8px rgba(255,176,0,0.3);
 }
 @media(max-width:599px){
-  body{min-height:100vh;overflow-x:hidden;justify-content:flex-start}
-  pre{font:1.5rem/1.15 monospace;margin-left:50%;transform:translateX(-50%)}
+  html,body{overflow:hidden}
+  body{min-height:100vh;justify-content:flex-start}
+  pre{font:1.5rem/1.15 monospace;position:relative;left:50%;transform:translateX(-50%)}
 }
 @media(min-width:600px){
   body{min-height:100vh;align-items:center;justify-content:center}
-  pre{font-size:14px}
+  pre{font-size:1.5rem}
 }
 .t{animation:twinkle 2s ease-in-out infinite}
 .t2{animation:twinkle 3s ease-in-out infinite;animation-delay:-1s}
@@ -56,14 +56,14 @@ pre{
  <span class="t3">.</span>    <span class="t">*</span>         <span class="t2">*</span>
         <span class="t2">.</span>   <span class="t3">*</span>
 
-     not time yet...
+ it's not time yet...
 
   <span class="t">.</span>       <span class="t3">*</span>
       <span class="t2">*</span>        <span class="t">.</span>   <span class="t3">.</span>
  <span class="t3">*</span>        <span class="t">.</span>
 </p>
 <script>
-const d=new Date();if(d.getMonth()!==1||d.getDate()!==8){document.querySelector('pre').style.display='none';document.getElementById('w').style.display='block'}
+const d=new Date();if(d.getMonth()!==1||d.getDate()!==6){document.querySelector('pre').style.display='none';document.getElementById('w').style.display='block'}
 </script>
 </body>
 </html>
