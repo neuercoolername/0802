@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wolves</title>
+<style>
+*{margin:0;padding:0}
+html{min-height:100vh;background:#0a0a0a}
+body{display:flex;align-items:center;justify-content:center}
+pre{
+  color:#ffb000;
+  font:4rem/1.15 monospace;
+  text-shadow:0 0 8px rgba(255,176,0,0.3);
+}
+@media(max-width:599px){
+  body{min-height:100vh;overflow-x:hidden;justify-content:flex-start}
+  pre{font:1.5rem/1.15 monospace;margin-left:50%;transform:translateX(-50%)}
+}
+@media(min-width:600px){
+  body{min-height:100vh;align-items:center;justify-content:center}
+  pre{font-size:14px}
+}
+.t{animation:twinkle 2s ease-in-out infinite}
+.t2{animation:twinkle 3s ease-in-out infinite;animation-delay:-1s}
+.t3{animation:twinkle 2.5s ease-in-out infinite;animation-delay:-0.5s}
+.s{animation:shimmer 3s ease-in-out infinite}
+.s2{animation:shimmer 4s ease-in-out infinite;animation-delay:-1.5s}
+@keyframes twinkle{0%,100%{opacity:1}50%{opacity:0.3}}
+@keyframes shimmer{0%,100%{opacity:1}50%{opacity:0.6}}
+</style>
+</head>
+<body>
+<pre>
+                        _                                     
+        <span class="t">.</span>              / \   .-.    <span class="t2">.</span>  _   <span class="t">*</span>     _   <span class="t3">.</span>
+           <span class="t2">*</span>          /   \     🌙       _/ \       <span class="t">*</span>    .
+         _    <span class="t3">.</span>   .--'\/\_ \     `      /    \  <span class="t2">*</span>    ___
+     <span class="t">*</span>  / \_    _/ ^      \/\'__        /\/\  /\  __/   \ <span class="t3">*</span>
+       /    \  /    .'   _/  /  \  *' /    \/  \/ .`'\_/\   <span class="t">.</span>
+  <span class="t2">.</span>   /\/\  /\/ :' __  ^/  ^/    `--./.'  ^  `-.\ _    _:\ _
+     /    \/  \  _/  \-' __/.' ^ _   \_   .'\   _/ \ .  __/ \
+   /\  .-   `. \/     \ / -.   _/ \ -. `_/   \ /    `._/  ^  \
+  /  `-.__ ^   / .-'.--'    . /    `--./ .-'  `-.  `-. `.  -  `.
+ /   🐺    `.  / /      `-.   🦊/  .-'   / .   .'   \  🍂 \  \  . 
+/        🐺  `. /    🐺🌲    `-./  `    / .'   🐺  🍂 .\  🐺🦊 \   
+@&8%@@%% @)&@&(88&@<span class="s">~</span>-_=_-=_-=_-=_-=_<span class="s2">~</span>8@% &@&&8(8%@%8)(8@%8 8%@)%@@&8<span class="s">~</span>
+@88:::&(&8&&8:::::%&`<span class="s">~</span>-_<span class="s2">~</span>~-~~_~-~_~-~<span class="s">~</span>=.'@(&%::::%@8&8)::&#@8::::&8%@<span class="s2">~</span>
+`::::::8%@@%:::::@%&8:`<span class="s2">.</span>=<span class="s">~</span>~-.<span class="s2">~</span>~-.<span class="s">~</span>~=..<span class="s2">~</span>'8::::::::&@8:::::&8:::::'
+ `::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.'
+
+                          <span class="t">*</span>  <span class="t2">.</span>  08.02.  <span class="t3">*</span>  <span class="t">.</span>
+</pre>
+<p id="w" style="display:none;color:#ffb000;font:2rem monospace;text-align:center;white-space:pre">
+    <span class="t">*</span>        <span class="t2">.</span>
+ <span class="t3">.</span>    <span class="t">*</span>         <span class="t2">*</span>
+        <span class="t2">.</span>   <span class="t3">*</span>
+
+     not time yet...
+
+  <span class="t">.</span>       <span class="t3">*</span>
+      <span class="t2">*</span>        <span class="t">.</span>   <span class="t3">.</span>
+ <span class="t3">*</span>        <span class="t">.</span>
+</p>
+<script>
+const d=new Date();if(d.getMonth()!==1||d.getDate()!==8){document.querySelector('pre').style.display='none';document.getElementById('w').style.display='block'}
+</script>
+</body>
+</html>
