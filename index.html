@@ -6,20 +6,17 @@
 <title>0802</title>
 <style>
 *{margin:0;padding:0}
-html{min-height:100vh;background:#0a0a0a}
-body{display:flex;align-items:center;justify-content:center}
-pre{
+html{min-height:100dvh;background:#0a0a0a}
+body{min-height:100dvh;display:flex;align-items:center;justify-content:center}
+#p{
   color:#ffb000;
+  font:1.5rem/1.15 monospace;
   text-shadow:0 0 8px rgba(255,176,0,0.3);
 }
 @media(max-width:599px){
   html,body{overflow:hidden}
-  body{min-height:100vh;justify-content:flex-start}
-  pre{font:1.5rem/1.15 monospace;position:relative;left:50%;transform:translateX(-50%)}
-}
-@media(min-width:600px){
-  body{min-height:100vh;align-items:center;justify-content:center}
-  pre{font-size:1.5rem}
+  body{justify-content:flex-start}
+  #p{position:relative;left:50%;transform:translateX(-50%)}
 }
 .t{animation:twinkle 2s ease-in-out infinite}
 .t2{animation:twinkle 3s ease-in-out infinite;animation-delay:-1s}
@@ -31,7 +28,8 @@ pre{
 </style>
 </head>
 <body>
-<pre>
+  <span id="p" style="display:none">
+<pre >
                         _                                     
         <span class="t">.</span>              / \   .-.    <span class="t2">.</span>  _   <span class="t">*</span>     _   <span class="t3">.</span>
            <span class="t2">*</span>          /   \     🌙       _/ \       <span class="t">*</span>    .
@@ -49,21 +47,23 @@ pre{
 `::::::8%@@%:::::@%&8:`<span class="s2">.</span>=<span class="s">~</span>~-.<span class="s2">~</span>~-.<span class="s">~</span>~=..<span class="s2">~</span>'8::::::::&@8:::::&8:::::'
  `::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.'
 
-                          <span class="t">*</span>  <span class="t2">.</span>  08.02.  <span class="t3">*</span>  <span class="t">.</span>
 </pre>
-<p id="w" style="display:none;color:#ffb000;font:2rem monospace;text-align:center;white-space:pre">
+<p style="margin:0 auto;display:block;text-align:center"><span class="t">*</span>  <span class="t2">.</span>  08.02.  <span class="t3">*</span>  <span class="t">.</span>
+</p>
+</span>
+<p id="w" style="display:block;color:#ffb000;font:2rem monospace;text-align:center;white-space:pre;margin:0 auto;padding:5px;">
     <span class="t">*</span>        <span class="t2">.</span>
  <span class="t3">.</span>    <span class="t">*</span>         <span class="t2">*</span>
         <span class="t2">.</span>   <span class="t3">*</span>
 
- it's not time yet...
+it's not time yet...
 
   <span class="t">.</span>       <span class="t3">*</span>
       <span class="t2">*</span>        <span class="t">.</span>   <span class="t3">.</span>
  <span class="t3">*</span>        <span class="t">.</span>
 </p>
 <script>
-const d=new Date();if(d.getMonth()!==1||d.getDate()!==8){document.querySelector('pre').style.display='none';document.getElementById('w').style.display='block'}
+const d=new Date();if(d.getMonth()===1&&d.getDate()===8){document.getElementById('p').style.display='block';document.getElementById('w').style.display='none'}
 </script>
 </body>
 </html>
